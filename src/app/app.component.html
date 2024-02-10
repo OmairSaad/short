@@ -1,0 +1,29 @@
+<div class="containers">
+    <div class="link">
+        <h1>Free <span style="color: #fa3;">URL</span> Shortner</h1>
+        <form action="">
+        <div>
+            <input type="text" name="t"  placeholder="Enter Link" class="form-control w-50 m-auto mb-3" [(ngModel)]="s">
+            <button type="submit" class="btn btn-success mx-2" (click)="send()">Submit</button>
+        </div>
+        <div id="spinner" [ngStyle]="{'display': spin ? 'none': 'block'}"></div>
+
+          
+    </form>
+    @if(shortid!=''){
+            <div class="form-control w-25 m-auto mt-3 con" [hidden]="show">
+                 <div class="copy" [hidden]="hide">Copied</div>
+                <p class="l" [class.Red]="isHighlight" #l>{{url}}{{shortid}}</p>
+                <button (click)="copy()" class="btn btn-primary">Copy</button>
+                <p class="mt-2 text-white font-10" style="font-size: 20px;">Total Clicks: <b style="color: #fa3;">{{clik}}</b></p>
+            </div>
+        }
+    </div>
+    <footer>
+        <div class="container">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+          <p>Designed with <span class="heart">&hearts;</span> by Omair Saad</p>
+        </div>
+      </footer>
+      
+</div>

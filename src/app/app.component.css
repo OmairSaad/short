@@ -1,0 +1,76 @@
+.containers{
+    padding-top: 30px;
+    height: 100vh;
+    background-color: rgb(27, 129, 181);
+    color: white;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.l{
+   background-color: cadetblue;
+   color: #ffffff;
+   padding: 5px;
+   border-radius: 10px;
+   margin: 10px;
+   font-weight: 700;
+}
+.con{
+    background-color: #393e46; 
+    padding: 10px 0;
+    position: relative;
+}
+.Red{
+    color:#055a71;
+}
+.copy{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    background-color: #fa3;
+    border-radius: 10px;
+    right: 20px;
+    top: -20px;
+    transition: 1s ease-in-out linear;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .heart {
+    color: red;
+  }
+
+#spinner {
+    margin-top: 20px;
+    position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid #ccc;
+        border-top-color: #333;
+        animation: spin 1s linear infinite; 
+    left: 49%;
+}
+      
+@keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+}
+      
