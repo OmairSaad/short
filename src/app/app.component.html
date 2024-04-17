@@ -11,7 +11,7 @@
           
     </form>
     @if(shortid!=''){
-            <div class="form-control w-25 m-auto mt-3 con" [hidden]="show">
+            <div class="form-control m-auto mt-3 con" [hidden]="show">
                  <div class="copy" [hidden]="hide">Copied</div>
                 <p class="l" [class.Red]="isHighlight" #l>{{url}}{{shortid}}</p>
                 <button (click)="copy()" class="btn btn-primary">Copy</button>
